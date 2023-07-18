@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - This program prints the alphabet in lowercase
  * but skips the letters q and e, using only putchar
