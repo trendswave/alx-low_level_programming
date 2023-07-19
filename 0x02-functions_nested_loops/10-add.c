@@ -1,20 +1,16 @@
-#include <unistd.h>
 #include "main.h"
-
 /**
- * add - This function adds two integers and returns the result
- * @a: First operand
- * @b: Second operand
+ * add - adds two integers and returnsthe result
  *
- * Return: the sum of the two operands
+ * At x: number being added
+ *
+ * At y: number being added
+ *
+ * Return: Always 0.
+ *
  */
-/*betty style*/
-int add(int a, int b)
+/*betty ssyle*/
+int add(int x, int y)
 {
-	int sum;
-
-	sum = a + b;
-
-	return (sum);
+	return (x + y);
 }
-
