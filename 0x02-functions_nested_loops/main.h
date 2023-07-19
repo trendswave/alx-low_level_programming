@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+void print_alphabet(void);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
