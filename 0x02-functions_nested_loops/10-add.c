@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * add - This function adds two integers and returns the result
