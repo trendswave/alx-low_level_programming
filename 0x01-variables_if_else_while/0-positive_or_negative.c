@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  *This program uses the function rand() to output
- *then tells if it's
+ * main - A program that determines if a number is positive, negative or zero.
  * positive, negative, or a zero.
  * Return: Always 0 (Success)
  */
