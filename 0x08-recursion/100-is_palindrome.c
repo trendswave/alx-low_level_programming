@@ -39,7 +39,7 @@ void check(char *s, int start, int end, int *flag)
  * _strlen_recursion - strings length calculated
  * @s: string to be used
  *
- * Returns:strings length
+ * Returns:length of the string
  */
 int _strlen_recursion(char *s)
 {
