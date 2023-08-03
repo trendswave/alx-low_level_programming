@@ -1,56 +1,54 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * strlen_recursion - This function finds the length of a string
- * @s: The string to evaluate
- * Return: The length of the string s
+ * is_palindrome - returns the 1 if s is a palindrome
+ * @s: string to be checked
+ *
+ * Return: 1 if s is a palindrome, 0 otherwise
  */
-
-int strlen_recursion(char *s)
-{
-	/* if string is empty, return 1 as palindrome */
-	if (*s == '\0')
-	{
-		return (0);
-	}
-	/* call function to return length */
-	s++;
-	return (1 + strlen_recursion(s));
-}
-
-/**
- * helper - This function evaluates a string
- * @s: The string to evaluate
- * @n: The length of the string
- * Return: 1 if s is a palindrom, otherwise 0
- */
-
-int helper(char *s, int len)
-{
-	/* if string is empty, return 1 as palindrome */
-	if (len <= 1)
-		return (1);
-	/* if current index is equal to half the index */
-	else if (*s == *(s + len - 1))
-	    return (helper(s + 1, len - 2));
-	else
-		return (0);
-}
-
-/**
- * is_palindrome - This function evaluates whether a string is a palindrome
- * @s: The string to evaluate
- * Return: 1 if s is a palindrome, otherwise 0
- */
-
 int is_palindrome(char *s)
 {
-	int len;
+	int flag = 1;
 
-	len = strlen_recursion(s);
+	check(s, 0, _strlen_recursion(s) - 1, &flag);
+	return (flag);
+}
 
-	if (len <= 1)
-		return (1);
+/**
+ * check - checks whether a string is a palindrome
+ * @s: string to be checked
+ * @start: start index
+ * @end: end index
+ * @flag: flag to indicate if a string is a palindrome
+ *
+ * Return: void
+ */
+void check(char *s, int start, int end, int *flag)
+{
+	if (start <= end)
+	{
+		if (s[start] == s[end])
+			*flag *= 1;
+		else
+			*flag *= 0;
+		check(s, start + 1, end - 1, flag);
+	}
+}
 
-	return(helper(s, len));
+/**
+ * _strlen_recursion - strings length calculated
+ * @s: string to be used
+ *
+ * Returns:strings length
+ */
+int _strlen_recursion(char *s)
+{
+	int sum = 0;
+
+	if (*s != '\0')
+	{
+		sum++;
+		sum += _strlen_recursion(s + 1);
+	}
+	return (sum);
 }
