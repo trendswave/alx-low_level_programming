@@ -13,7 +13,7 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	/*  don't do anything */
-	if (d == NULL)ifnull
+	if (d == NULL)
 		;
 	/* else initialize struct dog with passed values */
 	else
