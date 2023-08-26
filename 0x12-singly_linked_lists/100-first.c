@@ -8,7 +8,7 @@ void __attribute__((constructor)) print(void);
 
 void print(void)
 {
-	printf("I have been doing hard thing,\n"
-	       "i know am going to be a grate Software Engineer!\n");
+	printf("You're beat! and yet, you must allow,\n"
+	       "I bore my house upon my back!\n");
 
 }
