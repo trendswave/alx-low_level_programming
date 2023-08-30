@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 	if (head == NULL)
 		return (0);
 
-	for (q = marker = 0; head != NULL || flag; q++)
+	for (q = marker = 0; head != NULL || marker; q++)
 	{
 		printf("[%p] %d\n", (void *) head, head->n);
 
