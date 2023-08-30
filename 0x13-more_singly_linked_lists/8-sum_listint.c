@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * sum_listint - Sum of all the data (n) of a listint_t 
- * @head: Head of the list
- *
- * Return: Sum
+* sum_listint - Sum of all the data (n) of a listint_t 
+* @head: Head of the list
+*
+ Return: Sum
  **/
 int sum_listint(listint_t *head)
 {
