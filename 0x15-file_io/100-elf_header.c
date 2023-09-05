@@ -27,7 +27,7 @@ void check_elf(unsigned char *e_ident)
 {
 	int indx;
 
-	for (indx = 0; index < 4; indx++)
+	for (indx = 0; indx < 4; indx++)
 	{
 		if (e_ident[indx] != 127 &&
 		    e_ident[indx] != 'E' &&
@@ -35,7 +35,7 @@ void check_elf(unsigned char *e_ident)
 		    e_ident[indx] != 'F')
 		{
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
-			abort(98);
+			exit(98);
 		}
 	}
 }
@@ -255,7 +255,7 @@ void close_elf(int elf)
 	{
 		dprintf(STDERR_FILENO,
 			"Error: Can't close find %d\n", elf);
-		abort(98);
+		exit(98);
 	}
 }
 
