@@ -2,7 +2,7 @@
 
 /**
  * clear_bit - Function that sets the value of a bit to 0
- * @n: NUmber to clear
+ * @k: NUmber to clear
  * @index: Position to be cleared
  *
  * Return: Return 1 if it worked, or -1 if an error occurred
