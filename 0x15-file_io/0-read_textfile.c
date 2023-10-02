@@ -1,4 +1,4 @@
-#include "file.h"
+#include "main.h"
 
 /**
  *textfile - Reads a text file and prints it to the POSIX standard output
@@ -14,7 +14,7 @@ ssize_t textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	fid = open(filename, O_RDONLY)
+	fid = open(filename, 0_RDONLY)
 	if (fid == -1)
 		return (0);
 	buff = malloc(letters * sizeof(char));
@@ -31,4 +31,4 @@ ssize_t textfile(const char *filename, size_t letters)
 	status = write(STDOUT_FILENO, buff, byte_n);
 	free(buffer);
 	return (status);
-}
+
