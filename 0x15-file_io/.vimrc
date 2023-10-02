@@ -1,0 +1,9 @@
+set autoindent
+set smartindent
+set number
+syntax enable
+set foldmethod=indent
+set foldlevel=99
+set incsearch
+set confirm
+set rulerZZ
