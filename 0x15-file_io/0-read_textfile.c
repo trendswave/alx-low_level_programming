@@ -14,7 +14,7 @@ ssize_t textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
-	fid = open(filename, 0_RDONLY)
+	fid = open(filename, O_RDONLY)
 	if (fid == -1)
 		return (0);
 	buff = malloc(letters * sizeof(char));
