@@ -16,9 +16,9 @@ int main(int ac, char **av)
         dprintf(2, "Usage: %s filename\n", av[0]);
         exit(1);
     }
-    n = textfile(av[1], 114);
+    n = read_textfile(av[1], 114);
     printf("\n(printed chars: %li)\n", n);
-    n = textfile(av[1], 1024);
+    n = read_textfile(av[1], 1024);
     printf("\n(printed chars: %li)\n", n);
     return (0);
 }
