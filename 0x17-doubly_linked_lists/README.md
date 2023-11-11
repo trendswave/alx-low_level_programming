@@ -1,4 +1,4 @@
-# 0x16. C - Doubly linked lists
+# 0x17. C - Doubly linked lists
 This project introduces the use of doubly linked lists in C.
 
 ## 0. Print list
