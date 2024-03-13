@@ -37,3 +37,6 @@ typedef struct skiplist_s
 				struct skiplist_s *next;
 				struct skiplist_s *express;
 } skiplist_t;
+int linear_search(int *array, size_t size, int value);
+
+#endif /* _SEARCH_ALGOS_H_ */
